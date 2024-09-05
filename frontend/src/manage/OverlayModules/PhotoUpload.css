@@ -1,0 +1,12 @@
+.photo-upload-form {
+  background-color: white;
+  padding: 1rem;
+  width: fit-content;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+
+.photo-upload-form > * {
+  display: block;
+  margin: 1rem;
+}

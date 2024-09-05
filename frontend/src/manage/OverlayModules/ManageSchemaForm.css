@@ -1,0 +1,23 @@
+.schema-form {
+  background-color: white;
+  width: 50%;
+}
+
+.schema-form > div {
+  padding: 0.5rem 1rem;
+}
+.schema-form > *:not(div) {
+  margin: 1rem;
+}
+
+.schema-form input {
+  padding: 0.5rem;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.schema-form-flex-container {
+  display: flex;
+  justify-content: center;
+}

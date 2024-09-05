@@ -1,0 +1,12 @@
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f9d342; /* Example color */
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  z-index: 17;
+}

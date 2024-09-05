@@ -1,0 +1,155 @@
+body {
+  background-color: white;
+}
+
+.side-panel {
+  background-color: antiquewhite;
+  overflow: auto;
+  position: sticky;
+  height: 100vh;
+  top: 0px;
+  padding: 1rem 0px;
+  box-sizing: border-box;
+}
+
+.side-panel .selectable {
+  margin: 0px;
+  margin-left: 0.5rem;
+  padding: 4px 1rem;
+  max-width: 20ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.controls {
+  height: 50px;
+  background-color: antiquewhite;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+  position: sticky;
+  top: 0px;
+}
+
+.selectable {
+  padding: 4px;
+  margin: 5px;
+  border: 2px solid goldenrod;
+  /* background-color: rgb(255, 229, 197); */
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.selectable,
+.control-text {
+  font-size: 1rem;
+  font-family: Quicksand;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.control-text {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.selectable-wrapper {
+  width: calc(22ch + 2.5rem);
+}
+
+.selectable-wrapper:hover .selectable {
+  background-color: rgba(220, 189, 11, 0.485);
+}
+
+.selectable:hover {
+  background-color: rgba(220, 189, 11, 0.485);
+}
+
+.selected {
+  font-weight: 600;
+  /* font-size: 1.1rem; */
+}
+
+.ctrl-group {
+  display: flex;
+  gap: 4px;
+  /* height: inherit; */
+}
+
+.ctrl-group .selectable {
+  display: inline;
+  /* align-content: ; */
+  /* font-weight: 500; */
+}
+
+.ctrl-group::after {
+  content: "";
+  display: inline-block;
+  /* Adjust the thickness of the line */
+  width: 2px; /* Adjust the thickness of the line */
+  background-color: #000; /* Set the color of the line */
+  margin-left: 5px; /* Adjust the distance from the item */
+  margin-right: 5px; /* Adjust the distance from the item */
+}
+
+.ctrl-group:last-child::after {
+  content: ""; /* Prevents the line from appearing after the last item */
+}
+
+.manage-content > * {
+  padding: 20px;
+  background-color: white;
+}
+
+.buffer {
+  height: 50px;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.panel-cat {
+  margin-bottom: 0.5rem;
+}
+
+button.save {
+  margin: 20px;
+  margin-left: auto;
+}
+
+.hidden {
+  height: 0px !important;
+  width: 0px !important;
+  overflow: hidden;
+  padding: 0px !important;
+}
+
+.manage-content {
+  position: relative;
+}
+
+.manage-content.restricted {
+  height: calc(100vh - 50px);
+  overflow: hidden;
+}
+
+.manage-content .overlay-module {
+  height: calc(100vh - 50px);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.494);
+  position: absolute;
+  z-index: 15;
+  box-sizing: border-box;
+}
+
+.close-overlay-module-btn {
+  background-color: white;
+  height: 2.5rem;
+  cursor: pointer;
+}

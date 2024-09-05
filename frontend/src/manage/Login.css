@@ -1,0 +1,45 @@
+.form-container {
+  position: fixed;
+  z-index: 30;
+  height: 100vh;
+  width: 100vw;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between form elements */
+  padding: 20px; /* Padding around the form */
+  background-color: white; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: auto; /* Center the form */
+  width: 40ch;
+}
+
+.form-label {
+  margin-bottom: 5px; /* Space under the label */
+}
+
+.form-input {
+  padding: 10px; /* Padding inside the input */
+  font-size: 16px; /* Font size */
+  border: 1px solid #ccc; /* Border around the input */
+  border-radius: 4px; /* Rounded corners for the input */
+  width: 100%; /* Full width of the parent */
+  box-sizing: border-box;
+}
+
+.form-button {
+  padding: 10px 20px; /* Padding around the button text */
+  font-size: 18px; /* Larger font size for the button */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+}

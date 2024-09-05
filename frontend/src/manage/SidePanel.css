@@ -1,0 +1,109 @@
+.side-panel-flex-container {
+  display: flex;
+  gap: 5rem;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.side-panel-ctrl-buttons {
+  padding: 0px 1rem;
+}
+
+.control-text.selected-cat:not(.side-panel .control-text.selected-cat) {
+  border: dashed 2px;
+  padding: 0.5rem;
+}
+
+.inline-block.contextual-menu {
+  position: sticky;
+  top: 70px;
+  margin-left: 5rem;
+}
+
+.restricted .inline-block.contextual-menu {
+  top: 0px;
+}
+
+.inline-block.side-panel-ctrl-buttons .ctrl-btn {
+  height: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.inline-block.side-panel-ctrl-buttons .ctrl-btn.up {
+  transform: rotate(90deg);
+  margin-bottom: 0.25rem;
+  margin-right: 1rem;
+}
+
+.inline-block.side-panel-ctrl-buttons .ctrl-btn.up.margin-left {
+  transform: rotate(90deg);
+  margin-bottom: 0.25rem;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+
+.inline-block.side-panel-ctrl-buttons .ctrl-btn.down {
+  transform: rotate(-90deg);
+  margin-right: 1rem;
+}
+
+.inline-block.contextual-menu .schema-btns > * {
+  margin: 0rem 1rem;
+}
+
+.selected-ctrl-div {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.selected-ctrl-div img {
+  height: 2.5rem;
+  /* padding: 0rem 0.5rem; */
+}
+
+.selected-ctrl-div img:first-of-type {
+  padding-left: 0.5rem;
+}
+
+.inline-block.contextual-menu .cover {
+  min-height: 15rem;
+  min-width: 13rem;
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
+.cover-container {
+  position: relative;
+  width: fit-content;
+}
+
+.cover-container .bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+.cover-container .topcenter {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 600;
+  mix-blend-mode: difference;
+  color: #74ff00;
+}
+
+.selected-ctrl-div img {
+  cursor: pointer;
+}
